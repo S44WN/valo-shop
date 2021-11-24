@@ -1,0 +1,514 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ropa+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html,
+body {
+	width: 100%;
+    background-color: rgb(243, 73, 73);
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+}
+
+::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+
+
+.longo1, .longo2{
+	width: 700px;
+	height: auto;	
+}
+
+
+.longo1{
+	position: relative;
+	top: 15px;
+	left: 25px;
+	opacity: 0.6;
+}
+
+.longo2{
+	position: relative;
+	top: -110px;
+	left: 10px;
+}
+
+.longo{
+	/* background-color: aqua; */
+	width: 725px;
+	height: 120px;
+	position: absolute;
+	top: -30px;
+	left: -450px;
+	transform: rotate(-90deg);
+	transform-origin: right;
+    opacity: 0.7;
+	
+}
+
+.jettimg{
+	width: 400px;
+	height: auto;
+	transform: scaleX(-1);
+	margin-left: 68%;
+	margin-top: 20px;
+    margin-bottom: 100px;
+    opacity: 0.7;
+}
+
+.loginsec{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(250, 243, 234);
+    width: 600px;
+    text-align: left;
+
+}
+
+.title{
+	font-family: 'Anton', sans-serif;
+    font-size: 5em;
+    font-weight: 100;
+    line-height: 90px;
+    word-spacing: 0px;
+    letter-spacing: -2px;
+}
+
+.subtitle{
+    font-family: 'Ropa sans', Helvetica;
+    font-size: 1.5em;
+    padding-top: 50px;
+
+}
+
+.subtext{
+    font-family: 'Ropa sans', Helvetica;
+    padding-top: 20px;
+    font-size: 1.1em;
+    padding-bottom: 30px;
+}
+
+input{
+    color: black;
+    background-color: rgb(250, 243, 234);;
+    cursor: pointer;
+    font-family: 'Ropa sans', Helvetica;
+    font-size: 1.2em;
+    text-align: center;
+    letter-spacing: 0.05em;
+    border: 1px solid black;
+    width: 340px;
+    height: 40px;
+    
+}
+
+input{
+    margin-bottom: 5px;
+}
+
+button{
+    background-color: rgb(250, 243, 234);
+    cursor: pointer;
+    font-family: 'Ropa sans', Helvetica;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 0.05em;
+    border: 2px solid black;
+    position: relative;
+    top: -90px;
+    left: 370px;
+    width: 85px;
+    height: 85px;
+}
+
+
+
+.blocks span{
+    position: absolute;
+}
+
+.blocks span.one{
+    top: 20%;
+    left: 65%;
+    height: 45px;
+    width: 45px;
+    background-color: rgb(19, 24, 27);
+}
+
+.blocks span.two{
+    top: 75%;
+    left: 27%;
+    height: 35px;
+    width: 35px;
+    background-color: rgb(19, 24, 27);
+}
+
+.blocks span.three{
+    top: 10%;
+    left: 30%;
+    height: 20px;
+    width: 20px;
+    background-color: rgb(19, 24, 27);
+}
+
+
+.blocks span.four{
+    top: 55%;
+    left: 60%;
+    height: 25px;
+    width: 25px;
+    background-color: rgb(19, 24, 27);
+}
+
+.blocks span.five{
+    top: 45%;
+    left: 24%;
+    height: 45px;
+    width: 45px;
+    background-color: transparent;
+    border: 1.5px solid rgb(19, 24, 27);
+}
+
+.blocks span.six{
+    top: 75%;
+    left: 75%;
+    height: 45px;
+    width: 45px;
+    background-color: transparent;
+    border: 1.5px solid rgb(19, 24, 27);
+}
+
+.blocks span.seven{
+    top: 85%;
+    left: 8%;
+    height: 25px;
+    width: 25px;
+    background-color: transparent;
+    border: 1.5px solid rgb(19, 24, 27);
+}
+
+.blocks span.eight{
+    top: 15%;
+    left: 95%;
+    height: 25px;
+    width: 25px;
+    background-color: transparent;
+    border: 1.5px solid rgb(19, 24, 27);
+}
+
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(250, 243, 234);
+}
+
+.weapons{
+    display: flex;
+    width: 90%;
+}
+
+
+.weapon{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    border-radius: 10px;
+    flex: 0.5;
+    position: relative;
+    transition: flex 0.5s ease-in;
+    cursor: pointer;
+    margin: 10px;
+    flex-direction: column;
+}
+
+.weapon .wpdetails{
+    position: absolute;
+    bottom: 60px;
+    left: 50px;
+    visibility: hidden;
+}
+
+.weapon h3{
+    font-size: 45px;
+    opacity: 0;  
+}
+
+.weapon p{
+    font-size: 30px; 
+    opacity: 0;
+}
+
+
+.weapon.active{
+    flex: 5;
+
+}
+
+.weapon.active h3{
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.4s ;
+}
+
+.weapon.active p{
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.4s ;
+}
+
+.weapon .wpdetails{
+    visibility: visible;
+}
+
+/* ul{
+    list-style: none;
+}
+
+footer{
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 50px 100px;
+    background-color: rgb(19, 24, 27);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 80px;
+    color: rgb(250, 243, 234);
+}
+
+.aboutus{
+    width: 30%;
+}
+
+
+footer .fcont{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+} */
+
+footer{
+    background: rgb(19, 24, 27);
+    height: auto;
+    width: 100vw;
+    font-family: 'Poppins', sans-serif;
+    padding-top: 40px;
+    color: rgb(250, 243, 234);
+    margin-top: 100px;
+}
+
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-content h2{
+    font-size: 1.8em;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3em;
+}
+
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 16px;
+}
+
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+
+
+.socials li{
+    margin: 0 10px;
+}
+.socials a{
+    text-decoration: none;
+    color: rgb(250, 243, 234);
+}
+.socials a i{
+    font-size: 1.8rem;
+    transition: color .4s ease;
+
+}
+.socials a:hover i{
+    color: rgb(231, 63, 63);
+}
+
+.footer-content a{
+    text-decoration: none;
+    color: rgb(250, 243, 234);
+}
+
+.footer-content a:hover{
+    color: rgb(231, 63, 63);
+}
+
+
+.footer-bottom{
+    background: #000;
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;
+}
+.footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+.footer-bottom span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
+
+
+
+@media screen and (max-width: 800px){
+
+    .longo1, .longo2{
+        width: 200px;
+        height: auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0.5;	
+    
+    }
+
+
+    
+    .longo{
+        /* background-color: aqua; */
+        width: 255px;
+        height: 60px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        
+    }
+
+    .jettimg{
+        width: 70%;
+        height: auto;
+        transform: scaleX(-1);
+        margin-left: 25%;
+        margin-top: 20%;
+        opacity: 0.5;
+
+    }
+    
+    .loginsec{
+        position: absolute;
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: rgb(250, 243, 234);
+        width: 250px;
+        text-align: left;
+    
+    }
+    
+    .title{
+        font-family: 'Anton', sans-serif;
+        font-size: 2.5em;
+        line-height: 50px;
+        word-spacing: 0px;
+        letter-spacing: -1px;
+    }
+    
+    .subtitle{
+        font-family: 'Ropa sans', Helvetica;
+        font-size: 1.5em;
+        padding-top: 30px;
+    
+    }
+    
+    .subtext{
+        font-family: 'Ropa sans', Helvetica;
+        padding-top: 10px;
+        font-size: 1.1em;
+        padding-bottom: 30px;
+    }
+    
+    input{
+        color: black;
+        background-color: rgb(250, 243, 234);;
+        cursor: pointer;
+        font-family: 'Ropa sans', Helvetica;
+        font-size: 1.2em;
+        text-align: center;
+        letter-spacing: 0.05em;
+        border: 1px solid black;
+        width: 250px;
+        height: 40px;
+        
+    }
+    
+    input{
+        margin-bottom: 5px;
+    }
+    
+    button{
+        background-color: rgb(250, 243, 234);
+        cursor: pointer;
+        font-family: 'Ropa sans', Helvetica;
+        font-size: 1.2em;
+        font-weight: bold;
+        text-align: center;
+        letter-spacing: 0.05em;
+        border: 2px solid black;
+        position: relative;
+        top: 0px;
+        left: 0px;
+        width: 250px;
+        height: 40px;
+    }
+
+    .weapons{
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    .weapon h3{
+        font-size: 16px;
+    }
+    
+    .weapon p{
+        font-size: 12px;
+    }
+    
+    .blocks span.eight{
+        top: 15%;
+        left: 85%;
+        height: 25px;
+        width: 25px;
+        background-color: transparent;
+        border: 1.5px solid rgb(19, 24, 27);
+    }
+  }
