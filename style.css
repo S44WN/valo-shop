@@ -3,7 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
 :root {
   --surface-color: #ff4457;
-  --curve: 40;
+  --curve: 30;
 }
 
 * {
