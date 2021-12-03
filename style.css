@@ -244,6 +244,8 @@ body {
   width: 100%;
   height: auto;
   padding: 150px 0px 200px 0px;
+  -webkit-transform: rotate(20deg);
+          transform: rotate(20deg);
 }
 
 .container .card__overlay {
